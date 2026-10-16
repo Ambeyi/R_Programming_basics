@@ -1,0 +1,7 @@
+11 complete observations; years 2006-2016
+OLS rank: 5; residual degrees of freedom: 6
+R squared: 0.8916826
+Adjusted R squared: 0.8194710
+All five coefficients agree with the archived 2023 R report within 0.0000005.
+Outputs regenerated using Python NumPy/SciPy; revised R script not executed in this environment.
+Classical OLS inference is illustrative, not time-series-robust.
