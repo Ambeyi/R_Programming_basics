@@ -1,0 +1,5 @@
+Illustrative inputs; no market observations.
+Validation:
+rho=0.0417: continuous long-only minimum weight_A=0.29999360; expected_return=0.10599987; SD=0.16956073
+rho=1.0: continuous long-only minimum weight_A=0.00000000; expected_return=0.10000000; SD=0.20000000
+PASS: endpoints, perfect-correlation identity, boundary solution, and dense-grid minimum checks.
