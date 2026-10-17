@@ -18,6 +18,8 @@ def portfolio(weight, rho):
 
 
 def minimum_weight(rho):
+    if not -1 <= rho <= 1:
+        raise ValueError("Correlation must lie between -1 and 1")
     denominator = SD_A**2 + SD_B**2 - 2*rho*SD_A*SD_B
     if denominator == 0:
         return 0.0
