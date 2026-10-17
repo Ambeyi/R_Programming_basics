@@ -51,3 +51,9 @@ For weight w in A, mean = w μA + (1−w) μB. Variance = w² σA² + (1−w)² 
 The source export contained malformed Quarto formatting and additional market-data/model sections. Only the self-contained two-asset exercise is included here. The source's cached R workspace and unrelated assignment prose are excluded. No private observations, external downloads, or credentials are required. No results for the other source sections are claimed.
 
 AI assistance was used to restructure this exercise, implement a Python reproduction, prepare the chart and README, and check the arithmetic. This demonstrates a reviewed analytical workflow rather than an independently authored production investment system. Assumed means, volatilities and correlations are fixed; transaction costs, estimation uncertainty and changing market conditions are outside scope.
+
+## Regression tests
+
+From this project directory, run `python -m unittest -v test_analysis.py`.
+
+On 17 October 2026, all six tests passed. They cover risk cancellation at perfect negative correlation, variance addition at zero correlation, the perfect-positive-correlation boundary, numerical minimum checks across seven correlations, invalid weights, and invalid correlations. The minimum-weight function now rejects out-of-range and non-finite correlations consistently with the portfolio function. This update retains the original assumed inputs and outputs.
