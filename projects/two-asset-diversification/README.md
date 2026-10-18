@@ -57,3 +57,19 @@ AI assistance was used to restructure this exercise, implement a Python reproduc
 From this project directory, run `python -m unittest -v test_analysis.py`.
 
 On 17 October 2026, all six tests passed. They cover risk cancellation at perfect negative correlation, variance addition at zero correlation, the perfect-positive-correlation boundary, numerical minimum checks across seven correlations, invalid weights, and invalid correlations. The minimum-weight function now rejects out-of-range and non-finite correlations consistently with the portfolio function. This update retains the original assumed inputs and outputs.
+
+## Correlation sensitivity extension
+
+Added 18 October 2026. Run `python sensitivity.py` from this directory to regenerate [201 scenarios](results/correlation_sensitivity.csv), spanning correlation −1 to +1 in steps of 0.01. Each scenario recalculates the continuous long-only minimum-variance allocation using the same hypothetical inputs.
+
+| Correlation | Weight in A | Minimum standard deviation |
+|---|---:|---:|
+| −1.00 | 40.00% | 0.00% |
+| 0.00 | 30.77% | 16.64% |
+| 0.50 | 14.29% | 19.64% |
+| 0.67 | 0.00% | 20.00% |
+| 1.00 | 0.00% | 20.00% |
+
+For these assumed volatilities, the long-only optimum reaches zero weight in A at correlation 2/3: the numerator of the unconstrained weight becomes zero when 0.04 − 0.06ρ = 0. Above this threshold, the constraint keeps the allocation entirely in B. Perfect negative correlation permits exact risk cancellation at 40% A and 60% B in this mathematical example; it is not a claim about attainable market performance.
+
+Validation checked all 201 scenarios for feasible weights, nondecreasing minimum risk as correlation rises, and agreement with a 1,001-weight feasible grid per scenario (201,201 comparisons, tolerance 1e-8). All checks passed. This sensitivity extension is implemented in Python; the R counterpart still covers the original two scenarios.
