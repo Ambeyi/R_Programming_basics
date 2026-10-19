@@ -73,3 +73,11 @@ Added 18 October 2026. Run `python sensitivity.py` from this directory to regene
 For these assumed volatilities, the long-only optimum reaches zero weight in A at correlation 2/3: the numerator of the unconstrained weight becomes zero when 0.04 − 0.06ρ = 0. Above this threshold, the constraint keeps the allocation entirely in B. Perfect negative correlation permits exact risk cancellation at 40% A and 60% B in this mathematical example; it is not a claim about attainable market performance.
 
 Validation checked all 201 scenarios for feasible weights, nondecreasing minimum risk as correlation rises, and agreement with a 1,001-weight feasible grid per scenario (201,201 comparisons, tolerance 1e-8). All checks passed. This sensitivity extension is implemented in Python; the R counterpart still covers the original two scenarios.
+
+## Sensitivity visualisation
+
+![Optimal Asset A allocation and minimum volatility across correlation scenarios](results/correlation_sensitivity.svg)
+
+Run `python plot_sensitivity.py` to render the committed scenario CSV as a two-panel SVG using only the Python standard library. To regenerate everything, first run `python sensitivity.py`, then `python plot_sensitivity.py`.
+
+The dashed line marks the analytical correlation threshold of 2/3. The top panel shows the optimal allocation; the bottom shows minimum volatility. The SVG includes an accessible title and description. On 19 October 2026, the SVG structure and all 402 plotted coordinates were checked against the committed CSV within rounding tolerance (0.00051 SVG units). The visualisation changes presentation only; the hypothetical inputs and scenario results are unchanged.
