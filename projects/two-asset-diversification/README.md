@@ -81,3 +81,15 @@ Validation checked all 201 scenarios for feasible weights, nondecreasing minimum
 Run `python plot_sensitivity.py` to render the committed scenario CSV as a two-panel SVG using only the Python standard library. To regenerate everything, first run `python sensitivity.py`, then `python plot_sensitivity.py`.
 
 The dashed line marks the analytical correlation threshold of 2/3. The top panel shows the optimal allocation; the bottom shows minimum volatility. The SVG includes an accessible title and description. On 19 October 2026, the SVG structure and all 402 plotted coordinates were checked against the committed CSV within rounding tolerance (0.00051 SVG units). The visualisation changes presentation only; the hypothetical inputs and scenario results are unchanged.
+
+## Run the complete Python workflow
+
+From the repository root:
+
+```sh
+python projects/two-asset-diversification/reproduce.py
+```
+
+Alternatively, run `python reproduce.py` from this project directory. The runner locates its own directory, executes the six regression tests first, then regenerates the original analysis, correlation scenarios and sensitivity charts. It stops on the first failed command and checks that all five expected output files exist and are nonempty. Existing generated outputs are overwritten; a failed run can leave partially regenerated outputs. No packages beyond the Python standard library are needed. This command does not run the R counterpart.
+
+Verified on 20 October 2026 from outside the project directory: all six tests passed and all five Python outputs were regenerated successfully. The runner keeps assertion checks enabled in child processes even if Python optimisation is enabled for the parent process.
