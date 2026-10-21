@@ -16,6 +16,7 @@ def main():
         ['analysis.py'],
         ['sensitivity.py'],
         ['plot_sensitivity.py'],
+        ['validate_results.py'],
     ]
     for args in steps:
         print('Running: ' + ' '.join(args), flush=True)
