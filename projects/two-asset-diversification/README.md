@@ -93,3 +93,9 @@ python projects/two-asset-diversification/reproduce.py
 Alternatively, run `python reproduce.py` from this project directory. The runner locates its own directory, executes the six regression tests first, then regenerates the original analysis, correlation scenarios and sensitivity charts. It stops on the first failed command and checks that all five expected output files exist and are nonempty. Existing generated outputs are overwritten; a failed run can leave partially regenerated outputs. No packages beyond the Python standard library are needed. This command does not run the R counterpart.
 
 Verified on 20 October 2026 from outside the project directory: all six tests passed and all five Python outputs were regenerated successfully. The runner keeps assertion checks enabled in child processes even if Python optimisation is enabled for the parent process.
+
+## Validate saved sensitivity outputs
+
+Run `python validate_results.py` from this directory to check existing outputs without regenerating them. This checks 201 rows for the expected correlation sequence, finite values, feasible allocations, correct returns and variances, and first-order optimality of the constrained minimum. It also checks all 402 sensitivity-chart coordinates against the CSV. These checks use explicit exceptions and remain enabled with Python optimisation.
+
+The complete reproduction command now runs this validator after chart generation. On 21 October 2026, the full workflow and all six regression tests passed. A temporary copy with an intentionally corrupted expected return was correctly rejected. The validator is specific to this project's fixed assumptions and chart layout; it does not validate external market data or the separate R implementation.
