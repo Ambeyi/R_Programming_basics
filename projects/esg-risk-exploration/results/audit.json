@@ -1,0 +1,17 @@
+{
+  "rows": 1210,
+  "entities": 110,
+  "year_min": 2011,
+  "year_max": 2021,
+  "duplicate_entity_years": 0,
+  "complete_metric_rows": 1210,
+  "missing_by_metric": {
+    "Delta-CoVaR": 0,
+    "MES": 0,
+    "NSRISK": 0,
+    "ESG Combined Score": 0,
+    "Environmental Pillar Score": 0,
+    "Social Pillar Score": 0,
+    "Governance Pillar Score": 0
+  }
+}
