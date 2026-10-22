@@ -13,3 +13,7 @@ Original R programming examples elsewhere in this repository are retained.
 ### [Two-Asset Diversification Analysis](projects/two-asset-diversification/README.md)
 
 A self-contained exercise with hypothetical inputs, a tested Python implementation, a reviewed R counterpart, a 22-row results table, an SVG chart and explicit validation notes. Explores correlation and long-only minimum-variance allocations.
+
+### [ESG and Systemic Risk Exploration](projects/esg-risk-exploration/README.md)
+
+An executed Python adaptation of a separate Posit ESG project: data-quality checks and exploratory analysis of 1,210 entity-year observations across 110 entities, 2011–2021. Includes aggregate results, pair counts and documented provenance limits; raw workbook and unverified regressions are excluded.
