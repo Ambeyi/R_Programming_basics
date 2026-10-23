@@ -37,8 +37,8 @@ Use `--output /path/to/output` to select a different destination. Existing gener
 
 The source is `ESG_Data.xlsx` in Posit project 6461967. The original data vendor, collection methods, measurement definitions and redistribution rights were not documented in the reviewed export. The workbook, entity identifiers and original reports are therefore excluded. Reproduction of the committed results requires lawful access to that workbook; the repository does not include a substitute dataset or claim independently verified market evidence.
 
-## Review decisions
+## Scope and validation
 
-The original R script mixed inconsistent column naming, contained an extra comma in its IV call, and labelled the same panel LM-test call as two different diagnostics. Its GMM section was commented out. This release deliberately limits its claims to executed data auditing and descriptive analysis; none of the original regression, IV, GMM or diagnostic results is presented as validated. This is a new Python adaptation, not a claim that the complete R analysis was reproduced.
+The Python pipeline provides data-quality auditing, descriptive statistics, annual summaries and pooled correlation analysis. Results describe the supplied panel and support exploratory interpretation.
 
-AI assistance was used to restructure the workflow, prepare documentation and verify numerical outputs. On 22 October 2026, checks passed for correlation symmetry/diagonal, an independent centered-vector calculation of the Delta-CoVaR/MES correlation, and rejection of an intentionally duplicated entity-year record. There are no causal, forecasting or investment-performance claims.
+AI assistance supported implementation, documentation and numerical verification. On 22 October 2026, checks passed for correlation symmetry/diagonal, an independent centered-vector calculation of the Delta-CoVaR/MES correlation, and rejection of an intentionally duplicated entity-year record. There are no causal, forecasting or investment-performance claims.
