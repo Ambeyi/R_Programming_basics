@@ -17,3 +17,7 @@ A self-contained exercise with hypothetical inputs, a tested Python implementati
 ### [ESG and Systemic Risk Exploration](projects/esg-risk-exploration/README.md)
 
 An executed Python adaptation of a separate Posit ESG project: data-quality checks and exploratory analysis of 1,210 entity-year observations across 110 entities, 2011–2021. Includes aggregate results, pair counts and documented provenance limits; raw workbook and unverified regressions are excluded.
+
+### [Construction Estimate Formula and Regression Audit](projects/construction-estimate-audit/README.md)
+
+A separate Posit project auditing 1,000 construction estimates: verifies a pricing formula, reproduces archived R regression coefficients, and explains why a high in-sample R² does not establish causality. Includes tested Python code, aggregate results and explicit data-provenance limits.
