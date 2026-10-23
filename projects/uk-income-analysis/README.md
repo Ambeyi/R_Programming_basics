@@ -29,10 +29,10 @@ The high R² is not evidence of out-of-sample predictive performance. With only 
 
 | Path | Purpose |
 |---|---|
-| `R/analysis.R` | Cleaned R workflow with validation and saved outputs |
-| `results/` | Independently regenerated tables and overview figure |
+| `R/analysis.R` | R workflow with validation and saved outputs |
+| `results/` | Descriptive tables and overview figure |
 | `verification/verify.py` | Python numerical cross-check against the archived R report |
-| `docs/methodology.md` | Corrections, limitations and data dictionary |
+| `docs/methodology.md` | Methodology, limitations and data dictionary |
 | `data/README.md` | Input requirements and data-access limitation |
 
 ## Run the R workflow
@@ -51,7 +51,7 @@ New R outputs are written to `results/r-run/`, separate from the checked-in Pyth
 
 ## Verification
 
-All five independently recalculated OLS coefficients agree with the archived February 2023 R report within 0.0000005. See [validation log](results/validation.txt). The refactored R script itself has not yet been rerun; this distinction is intentional.
+All five independently recalculated OLS coefficients agree with the archived February 2023 R report within 0.0000005. See [validation log](results/validation.txt). The R workflow has not been executed in the verification environment; the committed outputs come from the Python numerical check.
 
 To reproduce the independent check with access to the original workbook:
 
