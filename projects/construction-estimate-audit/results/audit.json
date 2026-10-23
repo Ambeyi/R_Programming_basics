@@ -1,0 +1,17 @@
+{
+  "rows": 1000,
+  "duplicate_numeric_rows": 0,
+  "formula": "(Material_Cost + Labor_Cost) * (1 + Profit_Rate / 100) + Discount_or_Markup",
+  "formula_max_absolute_error": 1.4551915228366852e-11,
+  "formula_rows_within_one_cent": 1000,
+  "additive_ols_coefficients": {
+    "Intercept": -9231.554333287615,
+    "Material_Cost": 1.1940559523687546,
+    "Labor_Cost": 1.1951553414026694,
+    "Profit_Rate": 474.5429254634159,
+    "Discount_or_Markup": 0.9991607808168107
+  },
+  "additive_ols_rmse_in_sample": 946.5166492812643,
+  "additive_ols_r_squared_in_sample": 0.9970601180430418,
+  "interpretation": "Descriptive in-sample audit; no causal or out-of-sample claim. Currency and upstream provenance are unknown."
+}
