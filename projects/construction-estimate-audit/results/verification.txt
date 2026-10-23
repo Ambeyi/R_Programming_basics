@@ -1,0 +1,5 @@
+Verified 2026-10-23
+Three unittest cases passed (synthetic fixtures).
+All five OLS coefficients match the archived R regression_results.csv at rtol=1e-8, atol=1e-8.
+All 1,000 source totals match the documented pricing formula within one cent.
+Original R code was inspected, not rerun.
