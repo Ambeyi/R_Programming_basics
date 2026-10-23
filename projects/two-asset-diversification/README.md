@@ -13,7 +13,7 @@ How does changing correlation from 0.0417 to 1 affect diversification?
 | Expected return | 12% | 10% |
 | Standard deviation | 30% | 20% |
 
-Both assets use the same unspecified return horizon. Weights sum to one and lie between zero and one. The original exercise used stock names; generic labels avoid suggesting that the assumed inputs are measured company statistics.
+Both assets use the same unspecified return horizon. Weights sum to one and lie between zero and one. Asset A and Asset B are hypothetical assets; their inputs are assumptions, not measured company statistics.
 
 ## Results
 
@@ -48,19 +48,19 @@ For weight w in A, mean = w μA + (1−w) μB. Variance = w² σA² + (1−w)² 
 
 ## Scope and provenance
 
-The source export contained malformed Quarto formatting and additional market-data/model sections. Only the self-contained two-asset exercise is included here. The source's cached R workspace and unrelated assignment prose are excluded. No private observations, external downloads, or credentials are required. No results for the other source sections are claimed.
+This self-contained exercise uses hypothetical inputs and requires no private observations, external downloads or credentials. Its scope is two-asset portfolio arithmetic and correlation sensitivity.
 
-AI assistance was used to restructure this exercise, implement a Python reproduction, prepare the chart and README, and check the arithmetic. This demonstrates a reviewed analytical workflow rather than an independently authored production investment system. Assumed means, volatilities and correlations are fixed; transaction costs, estimation uncertainty and changing market conditions are outside scope.
+AI assistance supported implementation, charts, documentation and arithmetic verification. This demonstrates a reviewed analytical workflow rather than an independently authored production investment system. Assumed means, volatilities and correlations are fixed; transaction costs, estimation uncertainty and changing market conditions are outside scope.
 
 ## Regression tests
 
 From this project directory, run `python -m unittest -v test_analysis.py`.
 
-On 17 October 2026, all six tests passed. They cover risk cancellation at perfect negative correlation, variance addition at zero correlation, the perfect-positive-correlation boundary, numerical minimum checks across seven correlations, invalid weights, and invalid correlations. The minimum-weight function now rejects out-of-range and non-finite correlations consistently with the portfolio function. This update retains the original assumed inputs and outputs.
+On 17 October 2026, all six tests passed. They cover risk cancellation at perfect negative correlation, variance addition at zero correlation, the perfect-positive-correlation boundary, numerical minimum checks across seven correlations, invalid weights, and invalid correlations. The minimum-weight function rejects out-of-range and non-finite correlations consistently with the portfolio function.
 
-## Correlation sensitivity extension
+## Correlation sensitivity analysis
 
-Added 18 October 2026. Run `python sensitivity.py` from this directory to regenerate [201 scenarios](results/correlation_sensitivity.csv), spanning correlation −1 to +1 in steps of 0.01. Each scenario recalculates the continuous long-only minimum-variance allocation using the same hypothetical inputs.
+Run `python sensitivity.py` from this directory to regenerate [201 scenarios](results/correlation_sensitivity.csv), spanning correlation −1 to +1 in steps of 0.01. Each scenario recalculates the continuous long-only minimum-variance allocation using the same hypothetical inputs.
 
 | Correlation | Weight in A | Minimum standard deviation |
 |---|---:|---:|
@@ -72,7 +72,7 @@ Added 18 October 2026. Run `python sensitivity.py` from this directory to regene
 
 For these assumed volatilities, the long-only optimum reaches zero weight in A at correlation 2/3: the numerator of the unconstrained weight becomes zero when 0.04 − 0.06ρ = 0. Above this threshold, the constraint keeps the allocation entirely in B. Perfect negative correlation permits exact risk cancellation at 40% A and 60% B in this mathematical example; it is not a claim about attainable market performance.
 
-Validation checked all 201 scenarios for feasible weights, nondecreasing minimum risk as correlation rises, and agreement with a 1,001-weight feasible grid per scenario (201,201 comparisons, tolerance 1e-8). All checks passed. This sensitivity extension is implemented in Python; the R counterpart still covers the original two scenarios.
+Validation checked all 201 scenarios for feasible weights, nondecreasing minimum risk as correlation rises, and agreement with a 1,001-weight feasible grid per scenario (201,201 comparisons, tolerance 1e-8). All checks passed. The sensitivity analysis is implemented in Python; the R counterpart covers the two scenarios in the results table.
 
 ## Sensitivity visualisation
 
@@ -80,7 +80,7 @@ Validation checked all 201 scenarios for feasible weights, nondecreasing minimum
 
 Run `python plot_sensitivity.py` to render the committed scenario CSV as a two-panel SVG using only the Python standard library. To regenerate everything, first run `python sensitivity.py`, then `python plot_sensitivity.py`.
 
-The dashed line marks the analytical correlation threshold of 2/3. The top panel shows the optimal allocation; the bottom shows minimum volatility. The SVG includes an accessible title and description. On 19 October 2026, the SVG structure and all 402 plotted coordinates were checked against the committed CSV within rounding tolerance (0.00051 SVG units). The visualisation changes presentation only; the hypothetical inputs and scenario results are unchanged.
+The dashed line marks the analytical correlation threshold of 2/3. The top panel shows the optimal allocation; the bottom shows minimum volatility. The SVG includes an accessible title and description. On 19 October 2026, the SVG structure and all 402 plotted coordinates were checked against the committed CSV within rounding tolerance (0.00051 SVG units).
 
 ## Run the complete Python workflow
 
@@ -98,4 +98,4 @@ Verified on 20 October 2026 from outside the project directory: all six tests pa
 
 Run `python validate_results.py` from this directory to check existing outputs without regenerating them. This checks 201 rows for the expected correlation sequence, finite values, feasible allocations, correct returns and variances, and first-order optimality of the constrained minimum. It also checks all 402 sensitivity-chart coordinates against the CSV. These checks use explicit exceptions and remain enabled with Python optimisation.
 
-The complete reproduction command now runs this validator after chart generation. On 21 October 2026, the full workflow and all six regression tests passed. A temporary copy with an intentionally corrupted expected return was correctly rejected. The validator is specific to this project's fixed assumptions and chart layout; it does not validate external market data or the separate R implementation.
+The complete reproduction command runs this validator after chart generation. On 21 October 2026, the full workflow and all six regression tests passed. A temporary copy with an intentionally corrupted expected return was correctly rejected. The validator is specific to this project's fixed assumptions and chart layout; it does not validate external market data or the separate R implementation.
