@@ -1,0 +1,1 @@
+Verified 2026-11-04. Four unit tests passed. Independent standard-library CSV grouping matched unique-order and over-schedule totals.
