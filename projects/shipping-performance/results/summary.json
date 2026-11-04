@@ -1,0 +1,6 @@
+{
+  "input_rows": 180519,
+  "unique_orders": 65752,
+  "repeated_order_rows": 114767,
+  "over_schedule_orders": 37698
+}
