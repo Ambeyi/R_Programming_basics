@@ -1,0 +1,1 @@
+Verified 2026-11-05. Four tests passed. Independent CSV/statistics calculations matched all annual counts and means and all seasonal counts, means and sample standard deviations.
