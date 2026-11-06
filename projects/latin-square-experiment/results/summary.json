@@ -1,0 +1,10 @@
+{
+  "observations": 16,
+  "residual_df": 6,
+  "residual_sum_squares": 13.099362951105137,
+  "residual_mean_square": 2.1832271585175227,
+  "total_sum_squares": 214.72216700964742,
+  "data_kind": "simulated",
+  "seed": 123,
+  "noise_sd": 1.5
+}
