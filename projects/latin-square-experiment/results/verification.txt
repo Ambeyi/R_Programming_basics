@@ -1,0 +1,12 @@
+test_balance (test_analysis.ExperimentTests.test_balance) ... ok
+test_degenerate_residuals (test_analysis.ExperimentTests.test_degenerate_residuals) ... ok
+test_independent_balanced_anova (test_analysis.ExperimentTests.test_independent_balanced_anova) ... ok
+test_invalid_design (test_analysis.ExperimentTests.test_invalid_design) ... ok
+test_invalid_values (test_analysis.ExperimentTests.test_invalid_values) ... ok
+test_known_effects (test_analysis.ExperimentTests.test_known_effects) ... ok
+test_reproducible (test_analysis.ExperimentTests.test_reproducible) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.023s
+
+OK
