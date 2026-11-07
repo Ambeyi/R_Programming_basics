@@ -1,0 +1,14 @@
+{
+  "sample_size": 8000,
+  "minimum": 13,
+  "maximum": 80,
+  "mean": 46.354375,
+  "median": 46.0,
+  "population_sd": 19.74440536859429,
+  "theoretical_mean": 46.5,
+  "data_kind": "synthetic",
+  "seed": 123,
+  "lower_bound": 13,
+  "upper_bound": 80,
+  "band_width": 10
+}
