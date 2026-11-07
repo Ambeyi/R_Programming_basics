@@ -1,0 +1,11 @@
+test_chart_is_valid_xml (test_analysis.AgeTests.test_chart_is_valid_xml) ... ok
+test_conservation_and_expectations (test_analysis.AgeTests.test_conservation_and_expectations) ... ok
+test_hand_calculated_summary (test_analysis.AgeTests.test_hand_calculated_summary) ... ok
+test_inclusive_bounds (test_analysis.AgeTests.test_inclusive_bounds) ... ok
+test_invalid_parameters (test_analysis.AgeTests.test_invalid_parameters) ... ok
+test_reproducibility (test_analysis.AgeTests.test_reproducibility) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.029s
+
+OK
