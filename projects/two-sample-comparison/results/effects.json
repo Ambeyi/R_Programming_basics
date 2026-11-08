@@ -1,0 +1,9 @@
+{
+  "n_a": 12,
+  "n_b": 11,
+  "mean_difference": 6.416666666666664,
+  "mean_difference_ci95_low": 2.746152542736451,
+  "mean_difference_ci95_high": 10.087180790596879,
+  "welch_df": 20.87820633864094,
+  "probability_superiority_a": 0.8598484848484849
+}
