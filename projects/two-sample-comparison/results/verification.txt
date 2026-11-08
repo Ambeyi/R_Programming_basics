@@ -1,0 +1,11 @@
+test_csv_validation (test_analysis.ComparisonTests.test_csv_validation) ... ok
+test_group_swap (test_analysis.ComparisonTests.test_group_swap) ... ok
+test_identical_samples (test_analysis.ComparisonTests.test_identical_samples) ... ok
+test_invalid_samples (test_analysis.ComparisonTests.test_invalid_samples) ... ok
+test_known_welch_statistic (test_analysis.ComparisonTests.test_known_welch_statistic) ... ok
+test_pairwise_effect_with_ties (test_analysis.ComparisonTests.test_pairwise_effect_with_ties) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.012s
+
+OK
