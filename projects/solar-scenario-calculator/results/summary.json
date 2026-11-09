@@ -1,0 +1,6 @@
+{
+  "scenarios": 4,
+  "sensitivity_cases": 9,
+  "sensitivity_base": "baseline",
+  "highest_energy_scenario": "larger_area"
+}
