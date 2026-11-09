@@ -1,0 +1,12 @@
+test_area_scaling (test_model.SolarTests.test_area_scaling) ... ok
+test_duplicate_scenarios (test_model.SolarTests.test_duplicate_scenarios) ... ok
+test_hand_calculation (test_model.SolarTests.test_hand_calculation) ... ok
+test_invalid_parameters (test_model.SolarTests.test_invalid_parameters) ... ok
+test_inverse_area (test_model.SolarTests.test_inverse_area) ... ok
+test_sensitivity_grid (test_model.SolarTests.test_sensitivity_grid) ... ok
+test_zero_area_and_surplus (test_model.SolarTests.test_zero_area_and_surplus) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.006s
+
+OK
