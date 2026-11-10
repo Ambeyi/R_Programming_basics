@@ -1,0 +1,13 @@
+test_conservation (test_analysis.StartupTests.test_conservation) ... ok
+test_constant_correlation (test_analysis.StartupTests.test_constant_correlation) ... ok
+test_input_unchanged (test_analysis.StartupTests.test_input_unchanged) ... ok
+test_invalid_fields (test_analysis.StartupTests.test_invalid_fields) ... ok
+test_known_groups (test_analysis.StartupTests.test_known_groups) ... ok
+test_losses_supported (test_analysis.StartupTests.test_losses_supported) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.111s
+
+OK
+
+Independent openpyxl checks: record count, success count and city profit totals PASS.
