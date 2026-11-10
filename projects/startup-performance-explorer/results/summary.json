@@ -1,0 +1,9 @@
+{
+  "records": 1539,
+  "cities": 3,
+  "successes": 298,
+  "success_rate": 0.193632228719948,
+  "mean_profit": 107532.5502482666,
+  "earliest_start_year": 2005,
+  "latest_start_year": 2012
+}
