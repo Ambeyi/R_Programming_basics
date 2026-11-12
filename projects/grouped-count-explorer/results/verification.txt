@@ -1,0 +1,14 @@
+test_duplicates_rejected (test_analysis.GroupedTests.test_duplicates_rejected) ... ok
+test_input_preserved (test_analysis.GroupedTests.test_input_preserved) ... ok
+test_invalid_counts (test_analysis.GroupedTests.test_invalid_counts) ... ok
+test_missing_combinations (test_analysis.GroupedTests.test_missing_combinations) ... ok
+test_totals_conserved (test_analysis.GroupedTests.test_totals_conserved) ... ok
+test_weighted_ratio (test_analysis.GroupedTests.test_weighted_ratio) ... ok
+test_zero_children_allowed (test_analysis.GroupedTests.test_zero_children_allowed) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.121s
+
+OK
+
+Independent standard-library CSV reconciliation: cells, mother count and child count PASS.
