@@ -1,0 +1,6 @@
+{
+  "method": "leave_one_out",
+  "held_out_predictions": 26,
+  "rmse": 14.673787824821146,
+  "mae": 11.659686852068827
+}
