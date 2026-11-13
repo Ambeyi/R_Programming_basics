@@ -1,0 +1,12 @@
+test_constant_outcome (test_model.RegressionTests.test_constant_outcome) ... ok
+test_extrapolation (test_model.RegressionTests.test_extrapolation) ... ok
+test_independent_lstsq (test_model.RegressionTests.test_independent_lstsq) ... ok
+test_interval_widths (test_model.RegressionTests.test_interval_widths) ... ok
+test_invalid (test_model.RegressionTests.test_invalid) ... ok
+test_known_line (test_model.RegressionTests.test_known_line) ... ok
+test_perfect_validation (test_model.RegressionTests.test_perfect_validation) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.005s
+
+OK
