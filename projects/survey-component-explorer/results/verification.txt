@@ -1,0 +1,12 @@
+test_constant_item (test_analysis.ComponentTests.test_constant_item) ... ok
+test_identical_items (test_analysis.ComponentTests.test_identical_items) ... ok
+test_independent_svd (test_analysis.ComponentTests.test_independent_svd) ... ok
+test_invalid_ratings (test_analysis.ComponentTests.test_invalid_ratings) ... ok
+test_item_summary (test_analysis.ComponentTests.test_item_summary) ... ok
+test_row_order_invariance (test_analysis.ComponentTests.test_row_order_invariance) ... ok
+test_variance_accounting (test_analysis.ComponentTests.test_variance_accounting) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.051s
+
+OK
