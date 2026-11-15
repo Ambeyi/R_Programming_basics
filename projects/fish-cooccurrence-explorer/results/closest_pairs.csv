@@ -1,0 +1,21 @@
+species_a,species_b,shared_sites,union_sites,jaccard_distance,status
+Notolabrus celidotus,Forsterygion varium,292,400,0.27,defined
+Pseudolabrus luculentus,Coris sandeyeri,54,81,0.33333333333333337,defined
+Notolabrus celidotus,Forsterygion malcolmi,250,383,0.34725848563968664,defined
+Parapercis colias,Forsterygion varium,244,374,0.3475935828877005,defined
+Forsterygion malcolmi,Forsterygion varium,247,380,0.35,defined
+Hypoplectrodes dimidius,Pseudolabrus luculentus,46,72,0.36111111111111116,defined
+Notolabrus celidotus,Parapercis colias,243,381,0.36220472440944884,defined
+Notolabrus fucicola,Pseudolabrus miles,242,381,0.3648293963254593,defined
+Notolabrus celidotus,Notolabrus fucicola,263,426,0.38262910798122063,defined
+Scorpis violacea,Chromis dispilus,92,151,0.39072847682119205,defined
+Notolabrus fucicola,Forsterygion varium,258,425,0.39294117647058824,defined
+Parma alboscapularis,Coris sandeyeri,54,89,0.3932584269662921,defined
+Scorpaena cardinalis,Pseudolabrus luculentus,39,66,0.40909090909090906,defined
+Coris sandeyeri,Bodianus unimaculatus,53,90,0.4111111111111111,defined
+Pseudolabrus luculentus,Bodianus unimaculatus,48,82,0.41463414634146345,defined
+Hypoplectrodes dimidius,Bodianus unimaculatus,46,80,0.42500000000000004,defined
+Forsterygion flavonigrum,Forsterygion malcolmi,195,347,0.43804034582132567,defined
+Hypoplectrodes dimidius,Coris sandeyeri,47,84,0.44047619047619047,defined
+Caprodon longimanus,Suezichthys aylingi,38,68,0.4411764705882353,defined
+Notoclinops segmentatus,Ruanoho whero,186,333,0.4414414414414415,defined
