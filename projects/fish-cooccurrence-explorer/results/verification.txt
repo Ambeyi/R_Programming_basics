@@ -1,0 +1,14 @@
+test_conservation (test_analysis.FishTests.test_conservation) ... ok
+test_empty_species (test_analysis.FishTests.test_empty_species) ... ok
+test_identical_species (test_analysis.FishTests.test_identical_species) ... ok
+test_invalid (test_analysis.FishTests.test_invalid) ... ok
+test_known_distance (test_analysis.FishTests.test_known_distance) ... ok
+test_row_order (test_analysis.FishTests.test_row_order) ... ok
+test_set_based_reference (test_analysis.FishTests.test_set_based_reference) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.015s
+
+OK
+
+Independent set-based reconciliation of all 2,556 source pairs: 264 disjoint pairs PASS.
