@@ -1,0 +1,10 @@
+{
+  "sites": 467,
+  "species": 72,
+  "species_pairs": 2556,
+  "empty_sites": 0,
+  "absent_species": 0,
+  "defined_pairs": 2556,
+  "disjoint_pairs": 264,
+  "mean_site_richness": 16.815845824411134
+}
