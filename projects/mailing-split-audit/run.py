@@ -1,0 +1,19 @@
+"""Write aggregate split audit results without exporting source records."""
+import argparse,json
+from pathlib import Path
+import pandas as pd
+from split import audit
+
+def main():
+    p=argparse.ArgumentParser(description=__doc__)
+    p.add_argument('--input',type=Path,default=Path('examples/synthetic.csv'))
+    p.add_argument('--output',type=Path,default=Path('results/demo'))
+    p.add_argument('--seed',type=int,default=43)
+    args=p.parse_args()
+    tables=audit(pd.read_csv(args.input),args.seed)
+    args.output.mkdir(parents=True,exist_ok=True)
+    for name,table in zip(['partitions','overlap','missingness'],tables[:3]):table.to_csv(args.output/(name+'.csv'),index=False)
+    (args.output/'summary.json').write_text(json.dumps(tables[3],indent=2)+'\n')
+    print(json.dumps(tables[3],indent=2))
+
+if __name__=='__main__':main()
