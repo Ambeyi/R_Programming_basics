@@ -1,0 +1,12 @@
+test_counts (test_split.SplitTests.test_counts) ... ok
+test_determinism (test_split.SplitTests.test_determinism) ... ok
+test_disjoint_complete (test_split.SplitTests.test_disjoint_complete) ... ok
+test_duplicate_features (test_split.SplitTests.test_duplicate_features) ... ok
+test_invalid_labels (test_split.SplitTests.test_invalid_labels) ... ok
+test_missing_features_retained (test_split.SplitTests.test_missing_features_retained) ... ok
+test_rounding_remainder (test_split.SplitTests.test_rounding_remainder) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.066s
+
+OK
