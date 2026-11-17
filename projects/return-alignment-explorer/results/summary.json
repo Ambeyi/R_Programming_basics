@@ -1,0 +1,31 @@
+{
+  "intervals": 1199,
+  "start": "2000-03-13",
+  "end": "2023-03-13",
+  "min_interval_days": 7,
+  "max_interval_days": 14,
+  "left": {
+    "mean_log_return": 0.0002756384406529799,
+    "sample_sd": 0.030241767802284665,
+    "negative_intervals": 553
+  },
+  "right": {
+    "mean_log_return": 8.867633400794342e-05,
+    "sample_sd": 0.02983768305913563,
+    "negative_intervals": 543
+  },
+  "pearson_correlation": 0.6259422147538274,
+  "left_quality": {
+    "input_rows": 1201,
+    "valid_rows": 1200,
+    "rejected_rows": 1
+  },
+  "right_quality": {
+    "input_rows": 1201,
+    "valid_rows": 1201,
+    "rejected_rows": 0
+  },
+  "common_valid_dates": 1200,
+  "left_only_valid_dates": 0,
+  "right_only_valid_dates": 1
+}
