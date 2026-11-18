@@ -1,0 +1,3 @@
+2026-11-18
+Seven unit tests passed. Synthetic CLI example passed.
+Independent pandas checks matched all seven means, medians and top-choice counts; 59 tied-top responses confirmed.
