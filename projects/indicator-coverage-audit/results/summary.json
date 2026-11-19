@@ -1,0 +1,10 @@
+{
+  "input_rows": 14319,
+  "series": 782,
+  "valid_series_years": 14319,
+  "duplicate_keys": 0,
+  "duplicate_rows_beyond_first": 0,
+  "rejected_rows": 0,
+  "rejection_reasons": {},
+  "series_with_internal_gaps": 309
+}
