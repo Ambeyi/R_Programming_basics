@@ -1,0 +1,3 @@
+2026-11-19
+Eight unit tests passed; synthetic CLI example passed.
+Independent pandas reconciliation passed: 782 series, 14319 unique series-years, 309 series with internal gaps, total missing years and zero duplicate keys.
