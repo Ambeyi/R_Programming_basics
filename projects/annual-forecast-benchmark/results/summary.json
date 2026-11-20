@@ -1,0 +1,8 @@
+{
+  "observations": 8,
+  "first_year": 2007,
+  "last_year": 2014,
+  "initial_training_years": 4,
+  "test_years": 4,
+  "lowest_mae_model": "last_value"
+}
