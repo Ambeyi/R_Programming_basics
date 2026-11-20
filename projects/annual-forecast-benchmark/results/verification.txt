@@ -1,0 +1,3 @@
+2026-11-20
+Eight unit tests passed; synthetic CLI example passed.
+All 12 historical predictions matched independent numpy polynomial fits and direct baseline calculations within 1e-6 count units.
