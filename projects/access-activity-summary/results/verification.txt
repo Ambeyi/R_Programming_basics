@@ -1,0 +1,3 @@
+Synthetic example validation: 2026-11-23
+Seven unit tests passed. CLI example: five input rows, four accepted events, one invalid timestamp, one missing category.
+Daily, hourly and category totals each equal four. Published outputs use only examples/synthetic.csv.
