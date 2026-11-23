@@ -1,0 +1,9 @@
+{
+  "input_rows": 5,
+  "accepted_rows": 4,
+  "invalid_dates": 1,
+  "missing_category_among_accepted": 1,
+  "active_days": 2,
+  "first_timestamp": "2017-09-01T06:00:00",
+  "last_timestamp": "2017-09-02T08:00:00"
+}
