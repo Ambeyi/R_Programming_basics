@@ -1,0 +1,9 @@
+name,date,status,canonical,candidate_count
+Old Club,2000-01-01,matched,North Club,1
+Old Club,2009-12-31,matched,North Club,1
+Old Club,2010-01-01,matched,South Club,1
+Old Club,2021-01-01,unmatched,,0
+Shared Club,2006-06-01,ambiguous,,2
+Shared Club,2001-01-01,matched,East Club,1
+Unknown Club,2010-01-01,unmatched,,0
+old club,2005-01-01,unmatched,,0
