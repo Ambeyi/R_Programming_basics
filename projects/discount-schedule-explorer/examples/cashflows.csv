@@ -1,0 +1,9 @@
+scenario,year,amount
+Alpha,0,-1000
+Alpha,1,400
+Alpha,2,400
+Alpha,3,400
+Beta,0,-800
+Beta,1,250
+Beta,2,300
+Beta,3,500
