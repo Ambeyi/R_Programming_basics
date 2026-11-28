@@ -1,0 +1,19 @@
+{
+  "left_rows": 6,
+  "right_rows": 6,
+  "left_missing_key_rows": 1,
+  "right_missing_key_rows": 1,
+  "left_distinct_keys": 4,
+  "right_distinct_keys": 4,
+  "left_duplicate_keys": 1,
+  "right_duplicate_keys": 1,
+  "matching_keys": 2,
+  "matched_left_rows": 3,
+  "unmatched_left_rows": 3,
+  "unmatched_right_rows": 3,
+  "projected_left_join_rows": 8,
+  "additional_rows": 2,
+  "expansion_factor": 1.3333333333333333,
+  "matched_key_relationship": "many_to_many",
+  "many_to_many_keys": 1
+}
